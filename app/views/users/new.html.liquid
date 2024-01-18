@@ -1,0 +1,35 @@
+<h1>Create a New User</h1>
+
+<form action="/users" method="post" id="new-user-form">
+  <label for="user_uuid">UUID:</label>
+  <input type="text" name="user[uuid]" id="user_uuid">
+
+  <label for="user_gender">Gender:</label>
+  <input type="text" name="user[gender]" id="user_gender">
+
+  <label for="user_name">Title</label>
+  <select name="user[name][title]" id="user_title">
+  <option value="Mr">Mr</option>
+  <option value="Mrs">Mrs</option>
+  <option value="Ms">Ms</option>
+  <!-- Add more options as needed -->
+  </select>
+
+  <label for="user_name">First Name:</label>
+  <input type="text" name="user[name][first]" id="user_name" placeholder="Name">
+
+  <label for="user_name">Last Name:</label>
+  <input type="text" name="user[name][last]" id="user_name" placeholder="Name">
+
+  <label for="user_location">Location:</label>
+  <input type="text" name="user[location]" id="user_location" placeholder="Location">
+
+  <label for="user_age">Age:</label>
+  <input type="number" name="user[age]" id="user_age">
+
+  <div>
+    <input type="submit" value="Create User">
+  </div>
+</form>
+
+<a href="/users">Back to User Records</a>
