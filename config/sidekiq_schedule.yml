@@ -1,7 +1,7 @@
 hourly_job:
-  cron: '0 * * * *' # Run every hour
+  cron: '0 * * * *'
   class: 'HourlyJob'
 
 nightly_job:
-  cron: '0 0 * * *' # Run every night at midnight
+  cron: '0 0 * * *'
   class: 'NightlyJob'
